@@ -1,35 +1,51 @@
 public class Gugudan {
 	public static void main(String[] args) {
-		int[] result = new int[9];
-		for(int i = 0; i < result.length; i++) {
-			result[i] = 2 * (i + 1);
-		}
 		
-		for(int i = 0; i < result.length; i++) {
-			System.out.println(result[i]);
-		}
+		// 2,3,4,5,6,7,8,9 -> 1. i로 설정  2. 새로운 변수 설정
+
+		// TRY 1 -> 2를 i+2로 표현 (예상 문제 : 9초과)
+		// 2단 생성 시 2로 고정되어야 하는데 숫자가 계속 증가함.
 		
-		int[] times3 = new int[9];
-		for(int i = 0; i < times3.length; i++) {
-			times3[i] = 3 * (i + 1);
-		}
+
+		// TRY 2 -> 새로운 변수 설정
+		// 이중 for문 성공! (3 누르면 3단만 나오는 그건 모르겠음)
+		for(int j = 2; j < 10; j++) {
 		
-		for(int i = 0; i < times3.length; i++) {
-			System.out.println(times3[i]);
+			int[] result = new int[9];
+			for(int i = 0; i < result.length; i++) {
+				result[i] = j * (i + 1);
+			}
+			for(int i = 0; i < result.length; i++) {
+				System.out.println(result[i]);
+			}
 		}
 	}
 }
 
-		
-		
-		
 
 		
 
-
-
-
-
+//public class Gugudan {
+//	public static void main(String[] args) {
+//		int[] result = new int[9];
+//		for(int i = 0; i < result.length; i++) {
+//			result[i] = 2 * (i + 1);
+//		}
+//		
+//		for(int i = 0; i < result.length; i++) {
+//			System.out.println(result[i]);
+//		}
+//		
+//		int[] times3 = new int[9];
+//		for(int i = 0; i < times3.length; i++) {
+//			times3[i] = 3 * (i + 1);
+//		}
+//		
+//		for(int i = 0; i < times3.length; i++) {
+//			System.out.println(times3[i]);
+//		}
+//	}
+//}
 
 
 
@@ -49,6 +65,7 @@ public class Gugudan {
 //	System.out.println(2 * 9);
 //	System.out.println(2 * 10);
 	
+		
 	// 3단 
 //	System.out.println("");
 //	System.out.println("3단");
@@ -62,6 +79,10 @@ public class Gugudan {
 //	System.out.println(3 * 8);
 //	System.out.println(3 * 9);
 	
+		
+		
+		
+		
 	// 4단
 //	System.out.println("");
 //	System.out.println("4단");
@@ -84,6 +105,10 @@ public class Gugudan {
 //	result = 4 * 9;
 //	System.out.println(result);
 	
+		
+		
+		
+		
 	// 5단
 //import java.util.Scanner;
 
@@ -100,6 +125,10 @@ public class Gugudan {
 //	System.out.println(number * 8);
 //	System.out.println(number * 9);
 		
+		
+		
+		
+		
 		// 6단
 //		int i = 1;
 //		while(i < 10) {
@@ -107,10 +136,14 @@ public class Gugudan {
 //			i = i + 1;
 //		}
 	
+		
 		// 7단
 //		for(int j = 1; j < 10; j++) {
 //			System.out.println(7 * j);
 //		}
+		
+		
+		
 		
 		
 		// 8,9단
