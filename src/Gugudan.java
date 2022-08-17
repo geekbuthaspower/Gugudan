@@ -1,41 +1,40 @@
-import java.util.Scanner;
-
-
 public class Gugudan {
 	public static void main(String[] args) {
-		// 8,9단
-		System.out.println("구구단 중 출력할 단은? : ");
-		Scanner scanner = new Scanner(System.in);
-		int number = scanner.nextInt();
-		System.out.println("사용자가 입력한 값 : " + number);
-		
-		if(number < 2) {
-			System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
-		} else if(number > 9) {
-			System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
-		} else {
-			for(int i = 1; i < 10; i++)
-				System.out.println(number * i);
+		int[] result = new int[9];
+		for(int i = 0; i < result.length; i++) {
+			result[i] = 2 * (i + 1);
 		}
-	}		
+		
+		for(int i = 0; i < result.length; i++) {
+			System.out.println(result[i]);
+		}
+		
+		int[] times3 = new int[9];
+		for(int i = 0; i < times3.length; i++) {
+			times3[i] = 3 * (i + 1);
+		}
+		
+		for(int i = 0; i < times3.length; i++) {
+			System.out.println(times3[i]);
+		}
+	}
 }
 
 		
 		
 		
+
 		
-		// 6단
-//		int i = 1;
-//		while(i < 10) {
-//			System.out.println(6 * i);
-//			i = i + 1;
-//		}
-	
-		// 7단
-//		for(int j = 1; j < 10; j++) {
-//			System.out.println(7 * j);
-//		}
-		
+
+
+
+
+
+
+
+
+
+
 	// 2단
 //	System.out.println("");
 //	System.out.println("2단");
@@ -86,6 +85,8 @@ public class Gugudan {
 //	System.out.println(result);
 	
 	// 5단
+//import java.util.Scanner;
+
 //	System.out.println("구구단 중 출력할 단은? : ");
 //	Scanner scanner = new Scanner(System.in);
 //	int number = scanner.nextInt();
@@ -98,3 +99,36 @@ public class Gugudan {
 //	System.out.println(number * 7);
 //	System.out.println(number * 8);
 //	System.out.println(number * 9);
+		
+		// 6단
+//		int i = 1;
+//		while(i < 10) {
+//			System.out.println(6 * i);
+//			i = i + 1;
+//		}
+	
+		// 7단
+//		for(int j = 1; j < 10; j++) {
+//			System.out.println(7 * j);
+//		}
+		
+		
+		// 8,9단
+//import java.util.Scanner;
+
+//		System.out.println("구구단 중 출력할 단은? : ");
+//		Scanner scanner = new Scanner(System.in);
+//		int number = scanner.nextInt();
+//		System.out.println("사용자가 입력한 값 : " + number);
+//		
+//		if(number < 2) {
+//			System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
+//		} else if(number > 9) {
+//			System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
+//		} else {
+//			for(int i = 1; i < 10; i++)
+//				System.out.println(number * i);
+//		}
+//	}		
+//}
+		
