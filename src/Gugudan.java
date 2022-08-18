@@ -1,29 +1,28 @@
 public class Gugudan {
+	public static int[] calculate(int times) {
+		int[] result = new int[9];
+		for(int i = 0; i < result.length; i++) {
+			result[i] = times * (i + 1);
+		}
+		return result;
+	}
+	
+	public static void print(int[] result) {
+		for(int i = 0; i < result.length; i++) {
+			System.out.println(result[i]);
+		}
+	}
+	
 	public static void main(String[] args) {
-		
-		// 2,3,4,5,6,7,8,9 -> 1. i로 설정  2. 새로운 변수 설정
-
-		// TRY 1 -> 2를 i+2로 표현 (예상 문제 : 9초과)
-		// 2단 생성 시 2로 고정되어야 하는데 숫자가 계속 증가함.
-		
-
-		// TRY 2 -> 새로운 변수 설정
-		// 이중 for문 성공! (3 누르면 3단만 나오는 그건 모르겠음)
-		for(int j = 2; j < 10; j++) {
-		
-			int[] result = new int[9];
-			for(int i = 0; i < result.length; i++) {
-				result[i] = j * (i + 1);
-			}
-			for(int i = 0; i < result.length; i++) {
-				System.out.println(result[i]);
-			}
+		for(int i = 2; i < 10; i++) {
+		int[] result = calculate(i);
+		print(result);
 		}
 	}
 }
 
+	
 
-		
 
 //public class Gugudan {
 //	public static void main(String[] args) {
@@ -43,6 +42,42 @@ public class Gugudan {
 //		
 //		for(int i = 0; i < times3.length; i++) {
 //			System.out.println(times3[i]);
+//		}
+//		
+//		int[] times4 = new int[9];
+//		for(int i = 0; i < times4.length; i++) {
+//			times4[i] = 4 * (i + 1);
+//		}
+//		
+//		for(int i = 0; i < times4.length; i++) {
+//			System.out.println(times4[i]);
+//		}
+//	}
+//}
+
+
+
+
+//public class Gugudan {
+//	public static void main(String[] args) {
+//		
+//		// 2,3,4,5,6,7,8,9 -> 1. i로 설정  2. 새로운 변수 설정
+//
+//		// TRY 1 -> 2를 i+2로 표현 (예상 문제 : 9초과)
+//		// 2단 생성 시 2로 고정되어야 하는데 숫자가 계속 증가함.
+//		
+//
+//		// TRY 2 -> 새로운 변수 설정
+//		// 이중 for문 성공! (3 누르면 3단만 나오는 그건 모르겠음)
+//		for(int j = 2; j < 10; j++) {
+//		
+//			int[] result = new int[9];
+//			for(int i = 0; i < result.length; i++) {
+//				result[i] = j * (i + 1);
+//			}
+//			for(int i = 0; i < result.length; i++) {
+//				System.out.println(result[i]);
+//			}
 //		}
 //	}
 //}
